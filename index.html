@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Корги — Главная</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slider.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Corgi Club</div>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="clicker.html">Кликер</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page container">
+    <section class="hero">
+      <h1>Вельш-корги пемброк — родом из Уэльса</h1>
+      <p>Добро пожаловать на сайт о корги. Здесь вы можете увидеть моего коржика, почитать информацию о корги, узнать
+        погоду на родине корги (и не только там) и расслабиться в кликере.</p>
+    </section>
+
+    <section class="slider-section">
+      <h2>Мой корги</h2>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="images/photo1.jpg" alt="Corgi 1"></div>
+          <div class="slide"><img src="images/photo2.jpg" alt="Corgi 2"></div>
+          <div class="slide"><img src="images/photo3.jpg" alt="Corgi 3"></div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="weather-section">
+      <h2>Погода в любой точке мира</h2>
+      <div class="city-search">
+        <input type="text" id="city-input" placeholder="Введите город (например: Москва)">
+        <button id="city-btn">Показать погоду</button>
+      </div>
+      <div id="weather">
+        Загрузка погоды...
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© Corgi Club</div>
+    </div>
+  </footer>
+
+  <script src="js/slider.js" defer></script>
+  <script src="js/weather.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
