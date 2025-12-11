@@ -13,8 +13,10 @@ html,
 body {
     height: 100%;
     margin: 0;
+    text-align: center;
     font-family: Inter, system-ui, Arial, sans-serif;
-    color: #222
+    color: #222;
+    background-color: #f7e9cb;
 }
 
 .container {
@@ -26,8 +28,8 @@ body {
 
 /* Header */
 .site-header {
-    background: #fff;
-    border-bottom: 1px solid #eee
+    background: #f7e9cb;
+    border-bottom: 1px solid #f7e9cb
 }
 
 .header-inner {
@@ -83,9 +85,9 @@ body {
 .card {
     flex: 1 1 220px;
     padding: 16px;
-    border: 1px solid #eee;
+    border: 1px solid #f7e9cb;
     border-radius: 8px;
-    background: #fff
+    background: #f7d694
 }
 
 
@@ -94,14 +96,14 @@ body {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #ddd;
-    background: #fafafa;
+    background: #f7e9cb;
     min-height: 64px
 }
 
 
 /* Footer */
 .site-footer {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #f7e9cb;
     padding: 12px 0;
     margin-top: auto
 }
@@ -144,45 +146,45 @@ body {
 }
 
 .paw {
-  width: 512px;      /* или 80px, выбери размер */
-  height: auto;      /* сохраняет пропорции */
-  display: block;    /* если нужно центрировать */
-  margin: 0 auto;    /* центрирование */
+    width: 512px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .clicker-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 #corgi-paw {
-  width: 200px;         /* регулируйте размер лапки */
-  cursor: pointer;
-  transition: transform 0.1s;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.1s;
 }
 
 #corgi-paw:active {
-  transform: scale(0.9); /* эффект нажатия */
+    transform: scale(0.9);
 }
 
 #clicker-text {
-  font-size: 24px;
-  margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 #score {
-  margin-top: 20px;
-  font-size: 22px;
+    margin-top: 20px;
+    font-size: 22px;
 }
 
 #reset-btn {
-  margin-top: 15px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 @media (max-width:700px) {
@@ -202,27 +204,104 @@ body {
 }
 
 .city-search {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .city-search input {
-  padding: 8px 10px;
-  flex: 1;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+    padding: 8px 10px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
 .city-search button {
-  padding: 8px 14px;
-  background: #ff9b00;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
+    padding: 8px 14px;
+    background: #ff9b00;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .city-search button:hover {
-  background: #ffb447;
+    background: #ffb447;
+}
+
+h1 {
+    color: #333;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+#scoreboard {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #f7d694;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    min-width: 200px;
+}
+
+#game-container {
+    display: grid;
+    gap: 10px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#scoreboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#scoreboard th,
+#scoreboard td {
+    padding: 8px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 229, 144);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cell.green {
+    background-color: orange;
+}
+
+.cell.clicked {
+    background-color: orange;
+}
+
+#message {
+    font-size: 18px;
+    color: #444;
+}
+
+#lives {
+    color: red;
+    font-size: 20px;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    background: #ff9b00;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
 }
