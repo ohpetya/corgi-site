@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Запоминалка</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Corgi Club</div>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О породе</a>
+        <a href="clicker.html">Кликер</a>
+        <a href="memory.html">Запоминалка</a>
+      </nav>
+    </div>
+  </header>
+  <h1>Игра Запоминалка</h1>
+  <p id="message">Запоминай зелёные плитки!</p>
+  <div id="wrapper">
+    <div id="game-container"></div>
+    <div id="scoreboard">
+      <h2>Рейтинг</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Имя</th>
+            <th>Рекорд</th>
+          </tr>
+        </thead>
+        <tbody id="scoreboard-body">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="game-container"></div>
+  <p>Осталось жизней: <span id="lives">3</span></p>
+  <button onclick='startGame()'>Перезапустить раунд</button>
+  <button onclick='restartGame()'>Перезапустить игру</button>
+  <button onclick="clearScoreboard()">Очистить таблицу рекордов</button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© Corgi Club</div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
